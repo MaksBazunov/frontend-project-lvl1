@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/MaksBazunov/frontend-project-lvl1#readme",
   "bin": {
-    "code": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   }
 }
