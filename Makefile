@@ -8,3 +8,6 @@ publish:
 
 link: 
 	npm link
+
+lint:
+	sudo npx eslint
