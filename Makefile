@@ -10,4 +10,4 @@ link:
 	npm link
 
 lint:
-	sudo npx eslint
+	npx eslint
