@@ -4,7 +4,7 @@ on:
 
 jobs:
   test-job:
-    runs-on: Ubuntu 20.04.3 LTS
+    runs-on: Ubuntu 20.04.3
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
