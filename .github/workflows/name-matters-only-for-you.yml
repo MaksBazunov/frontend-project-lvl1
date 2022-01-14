@@ -1,10 +1,10 @@
 name: 'test my project'
 on:
   push:
-  
+
 jobs:
   test-job:
-    runs-on: Ubuntu 20.04.3 LTS
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
