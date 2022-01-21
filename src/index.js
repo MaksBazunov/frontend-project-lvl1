@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const gameRounds = 5;
+const gameRounds = 3;
 
 const playGame = (directive, genRound) => {
   console.log('Welcome to the Brain Games!');
