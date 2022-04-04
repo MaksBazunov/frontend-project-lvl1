@@ -22,6 +22,7 @@
     "brain-games": "bin/brain-games.js"
   },
   "dependencies": {
+    "@hexlet/pairs": "^1.1.1",
     "optionator": "^0.9.1",
     "readline-sync": "^1.4.10"
   },

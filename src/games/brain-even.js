@@ -1,5 +1,5 @@
-import getRandomNum from './common.js';
-import playGame from './index.js';
+import getRandomNum from '../common.js';
+import playGame from '../index.js';
 
 const directiveEven = 'Answer "yes" if the number is even, otherwise answer "no".';
 const minRandomNumber = 0;
