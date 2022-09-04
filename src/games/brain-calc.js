@@ -22,7 +22,7 @@ const calculate = (num1, num2, symbol) => {
 const genRound = () => {
   const num1 = getRandomNum(minRandomNumber, maxRandomNumber);
   const num2 = getRandomNum(minRandomNumber, maxRandomNumber);
-  const randomOperator = getRandomOperator(['+', '-','*']);
+  const randomOperator = getRandomOperator(['+', '-', '*']);
   const answer = String(calculate(num1, num2, randomOperator));
   const question = `${num1} ${randomOperator} ${num2}`;
   return [question, answer];

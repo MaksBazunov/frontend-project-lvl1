@@ -5,9 +5,7 @@ const directiveEven = 'Answer "yes" if the number is even, otherwise answer "no"
 const minRandomNumber = 0;
 const maxRandomNumber = 1000;
 
-const isEven = (num) => {
-  return (num % 2 === 0);
-}
+const isEven = (num) => num % 2 === 0;
 
 const genRound = () => {
   const num = getRandomNum(minRandomNumber, maxRandomNumber);
