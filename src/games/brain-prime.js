@@ -5,7 +5,6 @@ const directivePrime = 'Answer "yes" if given number is prime. Otherwise answer 
 const minRandomNumber = 2;
 const maxRandomNumber = 100;
 
-
 const isPrime = (num) => {
   if (num === 2) {
     return 'yes';
@@ -18,7 +17,7 @@ const isPrime = (num) => {
     if (num % i === 0) {
       return 'no';
     }
-    i+=1;
+    i += 1;
   }
   return 'yes';
 };
