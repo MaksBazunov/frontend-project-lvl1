@@ -24,7 +24,7 @@ const genRound = () => {
   items[i] = '..';
 
   const answer = String(NumStr);
-  const question = `${items.join()}`;
+  const question = `${items.join(' ')}`;
   return [question, answer];
 };
 
