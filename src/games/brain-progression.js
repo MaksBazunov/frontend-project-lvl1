@@ -6,7 +6,7 @@ const directiveProgress = 'What number is missing in the progression?';
 const genRound = () => {
   const randStart = getRandomNum(1, 40);
   const randEnd = getRandomNum(60, 100);
-  const randStep = getRandomNum(2, 6);
+  const randStep = getRandomNum(2, 5);
   const seriesNumArr = [];
 
   for (let i = randStart; i <= randEnd; i += 1) {
