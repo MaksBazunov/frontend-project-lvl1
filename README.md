@@ -9,14 +9,15 @@
 
 ## To start the game, enter one of the commands in the console:
 
-brain-games
-brain-even
-brain-calc
-brain-gcd
-brain-progression
-brain-prime
+####brain-games
 
-## Asciinema:
+brain-even; 
+brain-calc; 
+brain-gcd; 
+brain-progression; 
+brain-prime; 
+
+## Asciinemas:
 
 ### brain-even
 <a href="https://asciinema.org/a/fcAo9hdpZoH05NrUVqrKAGZXx" target="_blank"><img src="https://asciinema.org/a/fcAo9hdpZoH05NrUVqrKAGZXx.svg" /></a>
