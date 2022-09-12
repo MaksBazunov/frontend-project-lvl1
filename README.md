@@ -9,8 +9,7 @@
 
 ## To start the game, enter one of the commands in the console:
 
-####brain-games
-
+brain-games;
 brain-even; 
 brain-calc; 
 brain-gcd; 
