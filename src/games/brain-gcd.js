@@ -1,7 +1,7 @@
 import getRandomNum from '../common.js';
 import playGame from '../index.js';
 
-const directiveGcd = 'Find the greatest common divisor of given numbers.';
+const gameInstructionGcd = 'Find the greatest common divisor of given numbers.';
 const minRandomNumber = 1;
 const maxRandomNumber = 100;
 
@@ -19,4 +19,4 @@ const genRound = () => {
   const question = `${num1} ${num2}`;
   return [question, answer];
 };
-export default () => playGame(directiveGcd, genRound);
+export default () => playGame(gameInstructionGcd, genRound);

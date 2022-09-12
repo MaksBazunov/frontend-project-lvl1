@@ -1,31 +1,37 @@
 import getRandomNum from '../common.js';
 import playGame from '../index.js';
 
-const directiveProgress = 'What number is missing in the progression?';
+const gameInstructionProgression = 'What number is missing in the progression?';
 
-const genRound = () => {
-  const randStart = getRandomNum(1, 40);
-  const randEnd = getRandomNum(60, 100);
-  const randStep = getRandomNum(2, 5);
-  const seriesNumArr = [];
+const maxStart = 100;
+const maxStep = 10;
+const minLength = 5;
+const maxLength = 10;
 
-  for (let i = randStart; i <= randEnd; i += 1) {
-    seriesNumArr.push(i);
-    i += randStep;
-    if (seriesNumArr.length > 14) {
-      break;
-    }
+const genProgression = () => {
+  const start = getRandomNum(1, maxStart);
+  const step = getRandomNum(1, maxStep);
+  const length = getRandomNum(minLength, maxLength);
+  const progression = [];
+
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + step * i);
   }
-  const randomSeriesNum = seriesNumArr.length - (getRandomNum(1, seriesNumArr.length - 1));
-  const NumStr = seriesNumArr[randomSeriesNum];
 
-  const items = seriesNumArr;
-  const i = randomSeriesNum;
-  items[i] = '..';
+  return progression;
+};
+const genRound = () => {
+  const progression = genProgression();
+  const randomPosition = progression.length - (getRandomNum(1, progression.length - 1));
+  const missingValue = progression[randomPosition];
 
-  const answer = String(NumStr);
-  const question = `${items.join(' ')}`;
+  const newProgression = progression;
+  const i = randomPosition
+  newProgression[i] = '..';
+
+  const answer = String(missingValue);
+  const question = `${newProgression.join(' ')}`;
   return [question, answer];
 };
 
-export default () => playGame(directiveProgress, genRound);
+export default () => playGame(gameInstructionProgression, genRound);

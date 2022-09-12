@@ -1,7 +1,7 @@
 import getRandomNum from '../common.js';
 import playGame from '../index.js';
 
-const directiveCalc = 'What is the result of the expression?';
+const gameInstructionCalc = 'What is the result of the expression?';
 const minRandomNumber = 1;
 const maxRandomNumber = 10;
 
@@ -28,4 +28,4 @@ const genRound = () => {
   return [question, answer];
 };
 
-export default () => playGame(directiveCalc, genRound);
+export default () => playGame(gameInstructionCalc, genRound);

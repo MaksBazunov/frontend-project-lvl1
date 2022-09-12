@@ -1,32 +1,30 @@
 import getRandomNum from '../common.js';
 import playGame from '../index.js';
 
-const directivePrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameInstructionPrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const minRandomNumber = 2;
 const maxRandomNumber = 100;
 
-const isPrime = (num) => {
-  if (num === 2) {
-    return 'yes';
+const isPrime = (question) => {
+  if (question < 2) {
+    return false;
   }
 
-  let i = 2;
-  const squareNum = Math.sqrt(num);
+  const squareNum = Math.sqrt(question);
 
-  while (i <= squareNum) {
-    if (num % i === 0) {
-      return 'no';
+  for(let i = 2; i <= squareNum; i+=1) {
+    if (question % i === 0) {
+      return false;
     }
-    i += 1;
+    
   }
-  return 'yes';
+  return true;
 };
 
 const genRound = () => {
-  const num = getRandomNum(minRandomNumber, maxRandomNumber);
-  const question = num;
-  const answer = isPrime(num);
+  const question = getRandomNum(minRandomNumber, maxRandomNumber);
+  const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
-export default () => playGame(directivePrime, genRound);
+export default () => playGame(gameInstructionPrime, genRound);
