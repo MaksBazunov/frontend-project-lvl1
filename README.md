@@ -16,12 +16,12 @@
 
 ## To start the game, enter one of the commands in the console:
 
-brain-games;
-brain-even; 
-brain-calc; 
-brain-gcd; 
-brain-progression; 
-brain-prime; 
+1. brain-games;
+2. brain-even; 
+3. brain-calc; 
+4. brain-gcd; 
+5. brain-progression; 
+6. brain-prime; 
 
 ## Asciinemas:
 
