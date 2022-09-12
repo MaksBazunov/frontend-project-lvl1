@@ -12,11 +12,10 @@ const isPrime = (question) => {
 
   const squareNum = Math.sqrt(question);
 
-  for(let i = 2; i <= squareNum; i+=1) {
+  for (let i = 2; i <= squareNum; i += 1) {
     if (question % i === 0) {
       return false;
     }
-    
   }
   return true;
 };

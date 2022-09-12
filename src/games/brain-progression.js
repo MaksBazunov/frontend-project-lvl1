@@ -26,7 +26,7 @@ const genRound = () => {
   const missingValue = progression[randomPosition];
 
   const newProgression = progression;
-  const i = randomPosition
+  const i = randomPosition;
   newProgression[i] = '..';
 
   const answer = String(missingValue);
