@@ -9,10 +9,10 @@
 
 ## Installation:
 
-1.This game is for the Node.js v16.13.1 and later.
-2.Clone this repository (https://github.com/MaksBazunov/frontend-project-lvl1.git).
-3.Run: make install.
-4.Run: make link.
+1. This game is for the Node.js v16.13.1 and later.
+2. Clone this repository (https://github.com/MaksBazunov/frontend-project-lvl1.git).
+3. Run: make install.
+4. Run: make link.
 
 ## To start the game, enter one of the commands in the console:
 
