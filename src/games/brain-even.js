@@ -5,7 +5,7 @@ const gameInstructionEven = 'Answer "yes" if the number is even, otherwise answe
 const minRandomNumber = 0;
 const maxRandomNumber = 1000;
 
-const isEven = (question) => question % 2 === 0;
+const isEven = (num) => num % 2 === 0;
 
 const genRound = () => {
   const question = getRandomNum(minRandomNumber, maxRandomNumber);
